@@ -6,23 +6,9 @@
 # create a function that can modfiy a csv file, or read historical data from Metatrader 5 market data.
 #
 
-def function():
-	print("This is a test funcion")
+import csv
+with open('msft_csv_15m.csv', newline='') as f:
+	reader = csv.reader(f)
 
-def testfunc():
-	a=100
-	b=1300
-	
-	print(a+b)
-
-
-def main():
-	function()
-
-
-	testfunc()
-
-if __name__ == "__main__":
-	main()
-
-
+	for row in reader(['SPREAD']):
+		print(row)
