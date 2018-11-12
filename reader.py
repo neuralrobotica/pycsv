@@ -15,7 +15,7 @@ with open('msft_csv_15m.csv') as csvfile:
 		print(row)
 '''
 
-#show a specified row
+#show a  row
 
 with open('msft_csv_15m.csv') as csvfile:
 #	data = [row for row in csv.reader(csvfile)]
