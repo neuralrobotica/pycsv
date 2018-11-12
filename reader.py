@@ -10,6 +10,9 @@ def function():
 	print("This is a test funcion")
 
 
+def main():
+	function()
+
 if __name__ == "__main__":
 	main()
 
