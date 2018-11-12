@@ -17,8 +17,20 @@ with open('msft_csv_15m.csv') as csvfile:
 
 #show a  row
 
+'''
+
 with open('msft_csv_15m.csv') as csvfile:
 #	data = [row for row in csv.reader(csvfile)]
 	data = list(csv.reader(csvfile))
+	for csvfile in data:
+		print(data[0],data[1])
 
-	print(data[1][0])
+
+file = open('msft_csv_15m_.csv')
+reader = csv.reader(file)
+
+for line in reader:
+	print line([0], line[1])
+
+
+'''
