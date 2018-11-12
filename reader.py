@@ -9,9 +9,18 @@
 def function():
 	print("This is a test funcion")
 
+def testfunc():
+	a=100
+	b=1300
+	
+	print(a+b)
+
 
 def main():
 	function()
+
+
+	testfunc()
 
 if __name__ == "__main__":
 	main()
