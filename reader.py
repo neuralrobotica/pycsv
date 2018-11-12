@@ -7,8 +7,11 @@
 #
 
 import csv
-with open('msft_csv_15m.csv', newline='') as f:
-	reader = csv.reader(f)
 
-	for row in reader(['SPREAD']):
+with open('msft_csv_15m.csv') as csvfile:
+	reader = csv.reader(csvfile)
+
+	for row in csvfile:
 		print(row)
+#		print(row[0])
+
