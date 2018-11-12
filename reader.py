@@ -7,10 +7,18 @@
 #
 
 import csv
-
-with open('msft_csv_15m.csv',newline='') as csvfile:
+'''
+with open('msft_csv_15m.csv') as csvfile:
 	reader = csv.reader(csvfile)
 
 	for row in csvfile:
 		print(row)
+'''
 
+#show a specified row
+
+with open('msft_csv_15m.csv') as csvfile:
+#	data = [row for row in csv.reader(csvfile)]
+	data = list(csv.reader(csvfile))
+
+	print(data[1][0])
